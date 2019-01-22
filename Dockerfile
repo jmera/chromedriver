@@ -8,4 +8,4 @@ RUN useradd driver --shell /bin/bash --create-home
 
 USER driver
 
-ENTRYPOINT /usr/lib/chromium-browser/chromedriver --whitelisted-ips
+ENTRYPOINT /usr/lib/chromium-browser/chromedriver --whitelisted-ips --verbose --log-path=/home/driver/chromedriver.log
